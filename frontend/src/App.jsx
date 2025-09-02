@@ -1,7 +1,7 @@
-import { Route, Routes } from "react-router-dom";
-import FloatingShape from "./components/FloatingShape";
-import SignUpPage from "./pages/SignUpPage";
-import LoginPage from "./pages/LoginPage";
+import { Route, Routes } from 'react-router-dom';
+import FloatingShape from './components/FloatingShape';
+import SignUpPage from './pages/SignUpPage';
+import LoginPage from './pages/LoginPage';
 
 export function App() {
   return (
@@ -11,9 +11,10 @@ export function App() {
       <FloatingShape color="bg-lime-500" size="w-32 h-32" top="40%" left="-10%" delay={2} />
 
       <Routes>
-        <Route path="/" element={"Home"} />
+        <Route path="/" element={'Home'} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/verify-email" element={<EmailVerificationPage />} />
       </Routes>
     </div>
   );
